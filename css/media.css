@@ -1,0 +1,391 @@
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+	
+}
+
+@media screen and (max-width: 1250px){
+	
+}
+
+
+/* стили для md-устройств */
+@media screen and (max-width: 1200px) {
+	.header_title {
+		display: none;
+	}
+
+	.header_logo {
+		padding: 0;
+	}
+
+	.header_wrap {
+		padding: 0;
+	}
+
+	.header_middle {
+		padding: 0 0 0 145px;
+	}
+
+	.inner_absolute {
+		left: -1px;
+		top: 76px;
+	}
+
+	.inner_absolute2 {
+		top: 76px;
+		right: -1px;
+	}
+}	
+
+
+@media screen and (max-width: 1050px) {
+	
+  
+}
+
+
+/* стили для sm-устройств */
+@media screen and (max-width: 1024px) {
+	.header_right {
+		display: none;
+	}
+
+	.header_wrap {
+		justify-content: flex-start;
+	}
+
+	.header_middle {
+        padding: 0 0 0 90px;
+    }
+
+    .footer_mobile {
+    	display: block;
+    	padding: 0 0 36px 0;
+    }
+
+    .inner {
+	    padding: 24px 0 15px 0;
+	}
+
+	.inner_form {
+		display: block;
+	}
+
+	/*.work_border:before {
+	    position: absolute;
+	    content: '';
+	    background: url(../images/work_border2.svg) 50% 0 no-repeat;
+	    background-size: cover;
+	    right: 0;
+	    left: 0;
+	    bottom: -86px;
+	    top: -86px;
+	    z-index: 0;
+	}
+
+	.work_absolute {
+		display: none;
+	}
+
+	.work_absolute2 {
+		display: none;
+	}
+
+	.work_absolute3 {
+		display: none;
+	}
+
+	.work_absolute4 {
+		display: none;
+	}*/
+  
+}
+
+/* стили для sm-устройств */
+@media screen and (max-width: 992px) {
+	.header_middle {
+		display: none;
+	}
+
+	.header_wrap {
+		justify-content: center;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	
+
+
+}
+
+
+/* Ipad*/ 
+@media screen and (max-width: 768px) {
+	.title {
+	    position: relative;
+	    z-index: 1;
+	    font-size: 26px;
+	    font-weight: 800;
+	    line-height: 28px;
+	    letter-spacing: -0.03em;
+	    text-align: center;
+	    max-width: 450px;
+	    margin: 0 auto;
+	}
+
+	.work_img {
+	    margin: -50px 0 0 0;
+	    position: relative;
+	    z-index: 2;
+	    text-align: center;
+	}
+
+	.inner h2 {
+	    font-size: 18px;
+	    font-weight: 700;
+	    line-height: 20px;
+	    letter-spacing: -0.03em;
+	    text-align: center;
+	    color: #fff;
+	    max-width: 750px;
+	    margin: 33px auto 0 auto;
+	    position: relative;
+	    z-index: 1;
+	}
+
+	.inner_suptile p {
+	    font-size: 14px;
+	    font-weight: 300;
+	    line-height: 18px;
+	    text-align: center;
+	    color: #FFFFFFAB;
+	    position: relative;
+	    z-index: 1;
+	    margin: 10px auto 0 auto;
+	    max-width: 873px;
+	}
+
+	.js-modal {
+		display: block;
+	}
+
+	.modal-border {
+		margin: 50px auto 0 auto;
+		padding: 40px 20px;
+		max-width: 535px;
+		width: auto;
+	}
+}
+
+
+/* Ipad mini*/ 
+@media screen and (max-width: 640px) {
+	.work_border:before {
+	    position: absolute;
+	    content: '';
+	    background: url(../images/work_border2.svg) 50% 0 no-repeat;
+	    background-size: cover;
+	    right: 0;
+	    left: 0;
+	    bottom: -86px;
+	    top: -86px;
+	    z-index: 0;
+	}
+
+	.work_absolute {
+		display: none;
+	}
+
+	.work_absolute2 {
+		display: none;
+	}
+
+	.work_absolute3 {
+		display: none;
+	}
+
+	.work_absolute4 {
+		display: none;
+	}
+
+	.header {
+	    position: relative;
+	    z-index: 1;
+	    padding: 49px 0 10px 0;
+	}
+
+	.inner {
+        padding: 50px 0 15px 0;
+    }
+
+    .work_border {
+	    padding: 61px 0 0 0;
+	    background: none; 
+	    border-radius: 0;
+	    position: relative;
+	    height: 582px;
+	}
+
+	.inner_border {
+	    background: url(../images/inner_border2.svg) 50% 0 no-repeat;
+	    background-size: cover;
+	    position: relative;
+	    padding: 53px 18px 20px 18px;
+	    border-radius: 19px;
+	}
+
+	.inner_border:before {
+		display: none;
+	}
+
+	.inner_absolute {
+		display: none;
+	}
+
+	.inner_absolute2 {
+		display: none;
+	}
+
+	.inner_absolute3 {
+		display: none;
+	}
+
+	.inner_absolute4 {
+		display: none;
+	}
+
+	.inner_link a {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    width: 141px;
+	    height: 39px;
+	    font-size: 16px;
+	    font-weight: 500;
+	    line-height: 20px;
+	    color: #fff;
+	    background: #006B63;
+	    border-radius: 52px;
+	}
+
+	.inner_link a svg {
+	    margin: 0px 0 0 0px;
+	}
+
+	.inner_link {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: -33px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+  	.header_logo a img {
+  		width: 127px;
+  	}
+
+  	.work_border:before {
+        position: absolute;
+        content: '';
+        background: url(../images/work_border2.svg) 50% 0 no-repeat;
+        background-size: cover;
+        right: 0;
+        left: 0;
+        bottom: -30px;
+        top: -60px;
+        z-index: 0;
+    }
+
+    .work_border {
+        padding: 61px 0 0 0;
+        background: none;
+        position: relative;
+        height: 584px;
+    }
+
+    .inner {
+        padding: 0px 0 15px 0;
+    }
+
+    .modal-border {
+    	max-width: 100%;
+    	margin: 50px 20px 0 20px;
+    }
+
+
+}
+
+/* Galaxy S8+*/ 
+@media screen and (max-width: 480px) {
+  	.work_border {
+        padding: 30px 20px 0 20px;
+        background: none;
+        position: relative;
+        height: 400px;
+    }
+
+    .work_img {
+        margin: -40px 0 0 0;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .inner {
+        padding: 5px 0 15px 0;
+    }
+
+    .inner h2 {
+    	margin: 0;
+    }
+
+
+}
+
+/* Galaxy*/ 
+@media screen and (max-width: 415px) {
+  	.work_border {
+        padding: 30px 20px 0 20px;
+        background: none;
+        position: relative;
+        height: 380px;
+    }
+
+    .work_img {
+        max-width: 259px;
+        margin: -27px auto 0 auto;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .inner {
+        padding: 10px 0 15px 0;
+    }
+}
+
+
+/* Iphone 6.7.8 */ 
+@media screen and (max-width: 390px) {
+	.work_border {
+        padding: 20px 20px 0 20px;
+        background: none;
+        position: relative;
+        height: 329px;
+    }
+
+    .inner {
+        padding: 15px 0 15px 0;
+    }
+}
+
+/* Iphone 5.5SE */ 
+@media screen and (max-width: 320px) {
+	
+}
