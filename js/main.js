@@ -22,7 +22,11 @@ function bar_progress(progress_line_object, direction) {
 }
 
 jQuery(document).ready(function() {
-    
+    $('.contact_us').on('click', function() {
+      console.log("handle")
+      $('#contact_modal').addClass("is-open")
+    });
+
     /*
         Form
     */
@@ -40,6 +44,22 @@ jQuery(document).ready(function() {
       var current_active_step = $(this).parents('.form-wizard').find('.form-wizard-step.active');
       var progress_line = $(this).parents('.form-wizard').find('.form-wizard-progress-line');
       
+      var name = $("#name").val()
+      var email = $("#email").val()
+      var text = $("#text").val()
+
+      if(name && email && text) {
+        $('#success_modal').addClass("is-open")
+        console.log("SEND"+name+email+text)
+      }
+
+      else {
+        console.log("Error")
+        $(".modal_error").css('visibility','visible');
+        next_step = false;
+      }
+
+
       // fields validation
       parent_fieldset.find('.required').each(function() {
         if( $(this).val() == "" ) {
@@ -137,16 +157,14 @@ modals.forEach(modal => {
   });
 });
 
-triggersModal.forEach((button) =>
-button.addEventListener("click", function (e) {
-  e.preventDefault();
-  let modalID = this.dataset.modal;
-  console.log(modalID);
-  console.log("OLOLO");
+// triggersModal.forEach((button) =>
+// button.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   let modalID = this.dataset.modal;
   
-  modals.forEach(function (modal) {
-    if (modal.dataset.modal == modalID) {
-      modal.classList.add("is-open");
-    }
-  });
-}));
+//   modals.forEach(function (modal) {
+//     if (modal.dataset.modal == modalID) {
+//       modal.classList.add("is-open");
+//     }
+//   });
+// }));
