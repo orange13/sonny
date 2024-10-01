@@ -68,7 +68,7 @@
               </li>
             </ul>
             <div class="header_button">
-              <button class="js-show-modal" data-modal="1">
+              <button class="js-show-modal contact_us" data-modal="1">
                 Contact us 
                 <img src="images/header_button.svg" alt="">
               </button>
@@ -103,7 +103,7 @@
           <div class="inner_absolute3"></div>
           <div class="inner_absolute4"></div>
           <div class="inner_link">
-            <a href="#send_msg">
+            <a class="contact_us">
               Contact us 
               <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.70835 16.7915L16.1 7.39983" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
@@ -118,42 +118,6 @@
             <p>
               Sonny Robotics creates intelligent robots designed for warehouse tasks. Equipped with Artificial Intelligence and computer vision, these robots autonomously navigate warehouses, continuously learning to become smarter, more accurate, and faster. They handle receiving goods, placing them on shelves, and picking and packing orders for shipment. <br><br>Warehouses often face a workforce shortage of up to 30%, leading to delays and lost items. Sonny Robotics’ robots address this issue, ensuring faster, error-free order fulfillment and helping warehouses avoid significant financial losses.
             </p>
-          </div>
-          <div class="inner_form" id="send_msg">
-            <div class="form-wizard">
-              <form role="form" action="" method="post">
-                <fieldset>
-                  <h3 class="form_title">
-                    Leave us a message
-                  </h3>
-                  <p class="form_suptitle">
-                    We are happy to answer your questions!
-                  </p>
-                  <input class="form_input required" type="text" placeholder="Name" >
-                  <input class="form_input required" type="text" placeholder="Email">
-                  <textarea class="form_input form_textarea" rows="6" cols="35" name="text" placeholder="Message" width="100%"></textarea>
-                  <button type="button" class="inner_button btn-next">
-                    Send
-                    <img src="images/inner_button.svg" alt="">
-                  </button>
-                </fieldset>
-                <fieldset>
-                  <div class="form_flex">
-                    <div class="form_flex_block">
-                      <div class="form_flex_icon">
-                        <img src="images/form_flex_icon.svg" alt="">
-                      </div>
-                      <h3 class="form_title">
-                        Thank you! Your message has been sent successfully
-                      </h3>
-                      <p class="form_suptitle">
-                        We will contact you shortly
-                      </p>
-                    </div>
-                  </div>
-                </fieldset>
-              </form>
-            </div>
           </div>
         </div>
       </div>
@@ -198,7 +162,7 @@
       </div>
     </section>
 
-    <div class="modal js-modal modal-bg" data-modal="1">
+    <div class="modal js-modal modal-bg" data-modal="1" id="contact_modal">
       <div class="modal__inner modal-border">
         <div class="modal-close-button">
           <button class="button-close-modal js-close-modal">
@@ -214,11 +178,14 @@
         <p class="modal_suptitle">
           We are happy to answer your questions!
         </p>
-        <form class="modal_form">
-          <input class="modal_form_input" type="text" placeholder="Name">
-          <input class="modal_form_input" type="text" placeholder="Email">
-          <textarea class="modal_form_input modal_form_textarea" rows="6" cols="35" name="text" placeholder="Message" width="100%"></textarea>
-          <button type="button" class="modal_form_button js-show-modal" data-modal="2">
+        <p class="modal_error">
+          Please fill in all the fields or contact us on Telegram or LinkedIn
+        </p>
+        <form class="modal_form form-wizard">
+          <input class="modal_form_input required" type="text" placeholder="Name" id="name">
+          <input class="modal_form_input" type="text" placeholder="Email" id="email">
+          <textarea class="modal_form_input modal_form_textarea" rows="6" cols="35" name="text" placeholder="Message" width="100%" id="text"></textarea>
+          <button type="button" class="modal_form_button js-show-modal btn-next" data-modal="2">
             Send
             <img src="images/inner_button.svg" alt="">
           </button>
@@ -227,7 +194,7 @@
     </div>
 
 
-    <div class="modal js-modal modal-bg" data-modal="2">
+    <div class="modal js-modal modal-bg" data-modal="2" id="success_modal">
       <div class="modal__inner modal-border">
         <div class="modal-close-button">
           <button class="button-close-modal js-close-modal">
