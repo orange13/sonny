@@ -13,7 +13,7 @@
 
 
 /* стили для md-устройств */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 	.header_title {
 		display: none;
 	}
@@ -49,7 +49,7 @@
 
 
 /* стили для sm-устройств */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
 	.header_right {
 		display: none;
 	}
@@ -73,6 +73,18 @@
 
 	.inner_form {
 		display: block;
+	}
+
+	.bottom_button_contact_mobile {
+		display: flex !important;
+	}
+
+	.bottom_button_contact {
+		display: none !important;
+	}
+
+	#success_modal {
+		display: none;
 	}
 
 	/*.work_border:before {
