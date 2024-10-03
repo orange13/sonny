@@ -103,7 +103,14 @@
           <div class="inner_absolute3"></div>
           <div class="inner_absolute4"></div>
           <div class="inner_link">
-            <a class="contact_us">
+            <a class="contact_us bottom_button_contact">
+              Contact us 
+              <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.70835 16.7915L16.1 7.39983" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+              <path d="M6.70835 7.20817L16.2917 7.20817L16.2917 16.7915" stroke="white" stroke-width="2" stroke-linecap="square"/>
+              </svg>
+            </a>
+            <a class="bottom_button_contact_mobile" href="#send_msg">
               Contact us 
               <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.70835 16.7915L16.1 7.39983" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
@@ -119,8 +126,50 @@
               Sonny Robotics creates intelligent robots designed for warehouse tasks. Equipped with Artificial Intelligence and computer vision, these robots autonomously navigate warehouses, continuously learning to become smarter, more accurate, and faster. They handle receiving goods, placing them on shelves, and picking and packing orders for shipment. <br><br>Warehouses often face a workforce shortage of up to 30%, leading to delays and lost items. Sonny Robotics’ robots address this issue, ensuring faster, error-free order fulfillment and helping warehouses avoid significant financial losses.
             </p>
           </div>
+          
+          <p class="modal_error">
+            Please fill in all the fields or contact us on Telegram or LinkedIn
+          </p>
+
+          <div class="inner_form" id="send_msg">
+            <div class="form-wizard">
+              <form role="form" action="" method="post">
+                <fieldset>
+                  <h3 class="form_title">
+                    Leave us a message
+                  </h3>
+                  <p class="form_suptitle">
+                    We are happy to answer your questions!
+                  </p>
+                  <input class="form_input" type="text" placeholder="Name" id="name">
+                  <input class="form_input" type="text" placeholder="Email" id="email">
+                  <textarea class="form_input form_textarea" rows="6" cols="35" name="text" placeholder="Message" width="100%" id="text"></textarea>
+                  <button type="button" class="inner_button btn-next">
+                    Send
+                    <img src="images/inner_button.svg" alt="">
+                  </button>
+                </fieldset>
+                <fieldset>
+                  <div class="form_flex">
+                    <div class="form_flex_block">
+                      <div class="form_flex_icon">
+                        <img src="images/form_flex_icon.svg" alt="">
+                      </div>
+                      <h3 class="form_title">
+                        Thank you! Your message has been sent successfully
+                      </h3>
+                      <p class="form_suptitle">
+                        We will contact you shortly
+                      </p>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
+      
     </section>
 
     <section class="footer_mobile">
@@ -128,12 +177,12 @@
         <div class="footer_mobile_links">
           <ul>
             <li>
-              <a href="#">
+              <a href="mailto:ps@sonnyrobotics.com">
                 ps@sonnyrobotics.com
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="tel:+381628894635">
                 +381 62-88-94-635
               </a>
             </li>
