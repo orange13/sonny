@@ -23,8 +23,17 @@ function bar_progress(progress_line_object, direction) {
 
 jQuery(document).ready(function() {
     $('.contact_us').on('click', function() {
-      console.log("handle")
-      $('#contact_modal').addClass("is-open")
+      var name = $("#name").val()
+      var email = $("#email").val()
+      var text = $("#text").val()
+      
+      if(name && email && text) {
+        $('#success_modal').addClass("is-open")
+      }
+      
+      else {
+        $('#contact_modal').addClass("is-open")
+      }
     });
 
     /*
@@ -50,6 +59,7 @@ jQuery(document).ready(function() {
 
       if(name && email && text) {
         $('#success_modal').addClass("is-open")
+        $('#contact_modal').removeClass("is-open")
         console.log("SEND"+name+email+text)
       }
 
