@@ -848,3 +848,7 @@ ul, ol {
 .modal_icon2 {
   margin-bottom: 30px;
 }
+
+.bottom_button_contact_mobile {
+  display: none !important;
+}
